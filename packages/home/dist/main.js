@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("Promise.all(/*! import() */[__webpack_require__.e(\"vendors-node_modules_react-dom_index_js-node_modules_reactstrap_es_Button_js-node_modules_rea-eba038\"), __webpack_require__.e(\"src_bootstrap_js-data_image_svg_xml_3csvg_xmlns_27http_www_w3_org_2000_svg_27_fill_27_23fff_2-14a881\")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n//# sourceURL=webpack://home/./src/index.js?");
+eval("Promise.all(/*! import() */[__webpack_require__.e(\"vendors-node_modules_reactstrap_es_Button_js-node_modules_reactstrap_es_Jumbotron_js\"), __webpack_require__.e(\"vendors-node_modules_react-dom_index_js-node_modules_bootstrap_dist_css_bootstrap_min_css\"), __webpack_require__.e(\"src_bootstrap_js-data_image_svg_xml_3csvg_xmlns_27http_www_w3_org_2000_svg_27_fill_27_23fff_2-14a881\")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./src/bootstrap.js\"));\n\n//# sourceURL=webpack://home/./src/index.js?");
 
 /***/ })
 
