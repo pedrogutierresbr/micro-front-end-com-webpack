@@ -1,1 +1,1 @@
-# micro-front-end-com-webpack
+# Micro front-end com Webpack
