@@ -3,7 +3,7 @@ import { Jumbotron, Button } from 'reactstrap';
 
 const Home = () => {
 	return (
-		<div>
+		<div className="m-4">
 			<Jumbotron>
 				<h1 className="display-3">Olá Module Federation!</h1>
 				<hr className="my-2" />

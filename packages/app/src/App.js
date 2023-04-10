@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'reactstrap';
 
@@ -42,6 +42,9 @@ const App = () => {
 						}
 					/>
 				</Routes>
+				<div className="footer" color="light" light expand="md">
+					<h2 className="text-center">Created by: Pedro Gutierres</h2>
+				</div>
 			</div>
 		</Router>
 	);
