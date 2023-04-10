@@ -5,23 +5,27 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 module.exports = {
 	entry: './src/index.js',
 	output: {
-		filename: '[name].js',
 		path: path.resolve(__dirname, './dist'),
-		publicPath: 'http://localhost:9001',
+		filename: '[name].js',
+		publicPath: 'auto',
 	},
 	devServer: {
-		contentBase: path.resolve(__dirname, './dist'),
-		index: 'index.html',
-		port: 9001,
+		static: {
+			directory: path.join(__dirname, './dist'),
+		},
+		port: 9012,
+		hot: true,
 		historyApiFallback: true,
 	},
 	resolve: {
-		extensions: ['.jsx', '.js', '.json'],
+		extensions: ['*', '.jsx', '.js', '.json'],
 	},
+	mode: 'development',
 	module: {
 		rules: [
 			{
-				test: /\.jsx$/,
+				test: /\.jsx?$/,
+				exclude: /(node_modules)/,
 				loader: require.resolve('babel-loader'),
 				options: {
 					presets: [require.resolve('@babel/preset-react')],
@@ -37,7 +41,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: './public/index.html',
-			title: 'Module Federation Webpack - App',
+			title: 'App',
 		}),
 	],
 };
